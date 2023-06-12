@@ -1,0 +1,103 @@
+/* Write your code here. */
+.bgContainer {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .bgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.clockImage {
+  width: 60%;
+  max-width: 600px;
+}
+
+.bottomContainer {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.heading {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 30px;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.inputContainer {
+  width: 90%;
+}
+
+.label {
+  font-family: Roboto;
+  font-size: 12px;
+  color: #ffffff;
+  margin: 4px;
+}
+
+.inputElement {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 18px;
+  outline: none;
+}
+
+.cardContainer {
+  height: 45px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 10px;
+}
+
+.noOfLetters {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  color: #219a6f;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 769px) {
+  .bgContainer {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .clockImage {
+    order: 1;
+  }
+
+  .bottomContainer {
+    order: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .heading {
+    text-align: left;
+  }
+}
